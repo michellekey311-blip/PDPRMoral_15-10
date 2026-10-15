@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Adab Majlis Rasmi dan Tidak Rasmi 正式与非正式场合礼仪</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#f6f3ee;--card:#fff;--ink:#222;--mut:#666;--line:#d9d2c5;--acc:#6b2d8f;--ok:#1f8a4c;--bad:#c0392b;--sel:#fff3cd;
+--c0:#f8c8dc;--c1:#bfe3f5;--c2:#c9efc4;--c3:#fde0a8;--c4:#dcc8f5;--c5:#bfeadf}
+:root:not([data-theme="light"]){}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1b1a1f;--card:#26242c;--ink:#eee;--mut:#aaa;--line:#444;--acc:#c79bea;--ok:#5fd18b;--bad:#ff8a7a;--sel:#5a4a10;
+--c0:#6b2f48;--c1:#2c5568;--c2:#33573a;--c3:#6b5226;--c4:#4d3a70;--c5:#2b5b50}}
+:root[data-theme="dark"]{--bg:#1b1a1f;--card:#26242c;--ink:#eee;--mut:#aaa;--line:#444;--acc:#c79bea;--ok:#5fd18b;--bad:#ff8a7a;--sel:#5a4a10;--c0:#6b2f48;--c1:#2c5568;--c2:#33573a;--c3:#6b5226;--c4:#4d3a70;--c5:#2b5b50}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:.2em 0;color:var(--acc)}
+h2{font-size:1.1rem;margin:0 0 4px}
+.zh{color:var(--mut);display:block;font-size:.92em}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:14px 0}
+.hdr input,.hdr select{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+.hdr{display:grid;grid-template-columns:2fr 1fr;gap:10px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.item{border:2px solid var(--line);border-radius:10px;padding:9px 10px;margin-bottom:8px;cursor:pointer;background:var(--card);position:relative;user-select:none}
+.item.sel{border-color:var(--acc);background:var(--sel)}
+.item .n{display:inline-block;min-width:1.5em;font-weight:700}
+.item.ok{outline:3px solid var(--ok)}.item.bad{outline:3px solid var(--bad)}
+.locked .item{cursor:default}
+.tag{font-size:.75rem;float:right;border-radius:10px;padding:0 7px;background:var(--acc);color:var(--bg)}
+.split{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin-top:8px}@media(max-width:700px){.split{grid-template-columns:1fr}}
+.grid th,.grid td{text-align:center;padding:8px 4px}.grid td:first-child,.grid th:first-child{text-align:left}
+.box{display:inline-flex;width:30px;height:30px;border:2px solid var(--acc);border-radius:6px;align-items:center;justify-content:center;font-weight:700;cursor:pointer;color:var(--bg)}
+.box.on{background:var(--acc)}.locked .box{cursor:default}
+.grid tr.ok td:first-child{box-shadow:inset 5px 0 var(--ok)}.grid tr.bad td:first-child{box-shadow:inset 5px 0 var(--bad)}
+.unit{font-size:1.25rem;margin:26px 0 0;padding:8px 12px;border-radius:10px;background:var(--acc);color:var(--bg)}.unit .zh{color:inherit;opacity:.9}
+.w{display:block;width:100%;padding:9px;margin:6px 0;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);font:inherit}
+details{margin-top:6px}summary{cursor:pointer;color:var(--acc);font-weight:600}
+button{font:inherit;padding:11px 20px;border-radius:10px;border:0;background:var(--acc);color:var(--bg);cursor:pointer;font-weight:700}
+button.sec{background:transparent;color:var(--acc);border:2px solid var(--acc)}
+.bar{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+#res{font-size:1.2rem;font-weight:700}
+.msg{margin-top:8px;font-size:.95rem}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{border-bottom:1px solid var(--line);padding:6px;text-align:left}
+@media(max-width:520px){.hdr{grid-template-columns:1fr}.cols{gap:6px}.item{padding:7px;font-size:.92rem}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Ulangkaji Unit 10 &amp; Unit 8<span class="zh">单元10和单元8复习</span></h1>
+  <div class="card hdr">
+    <label>Nama 姓名<input id="name" placeholder="Nama / 姓名"></label>
+    <label>Kelas 班级<select id="cls"><option value="">— Pilih kelas 选择班级 —</option><option>3 CRYSTAL</option><option>3 DIAMOND</option><option>3 SAPPHIRE</option><option>3 SPINEL</option></select></label>
+  </div>
+  <h2 class="unit">Ulangkaji Unit 10<span class="zh">单元10复习：正式与非正式场合的礼仪</span></h2>
+  <div id="parts"></div>
+  <h2 class="unit">Ulangkaji Unit 8<span class="zh">单元8复习：5R</span></h2>
+  <div class="card" id="u8">
+    <h2>1. Senaraikan konsep 5R.<span class="zh">列出5R的概念。</span></h2>
+    <input class="w" data-u8="konsep" placeholder="1."><input class="w" data-u8="konsep" placeholder="2."><input class="w" data-u8="konsep" placeholder="3."><input class="w" data-u8="konsep" placeholder="4."><input class="w" data-u8="konsep" placeholder="5.">
+    <details><summary>Contoh jawapan 例子答案</summary><ul>
+      <li>Rethink &ndash; Fikir semula<span class="zh">重新思考</span></li>
+      <li>Reduce &ndash; Kurangkan<span class="zh">减少使用</span></li></ul>
+      <span class="zh">Jangan salin, tulis semua 5 konsep. 请勿照抄，写出全部5个概念。</span></details>
+    <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+    <h2>2. Tulis 4 kepentingan amalan 5R.<span class="zh">写出实践5R的4个重要性。</span></h2>
+    <textarea class="w" rows="2" data-u8="kepentingan" placeholder="1."></textarea><textarea class="w" rows="2" data-u8="kepentingan" placeholder="2."></textarea><textarea class="w" rows="2" data-u8="kepentingan" placeholder="3."></textarea><textarea class="w" rows="2" data-u8="kepentingan" placeholder="4."></textarea>
+    <details><summary>Contoh jawapan 例子答案</summary><ul>
+      <li>Mengurangkan pencemaran alam sekitar.<span class="zh">减少环境污染。</span></li>
+      <li>Menjimatkan sumber asli.<span class="zh">节省天然资源。</span></li>
+      <li>Menjimatkan perbelanjaan.<span class="zh">节省开支。</span></li></ul>
+      <span class="zh">Tulis jawapan anda sendiri. 请写出你自己的答案。</span></details>
+    <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+    <h2>3. Tulis 2 cara mengamalkan 5R.<span class="zh">写出实践5R的2个方法。</span></h2>
+    <textarea class="w" rows="2" data-u8="cara" placeholder="1."></textarea><textarea class="w" rows="2" data-u8="cara" placeholder="2."></textarea>
+    <details><summary>Contoh jawapan 例子答案</summary><ul>
+      <li>Membawa beg boleh guna semula semasa membeli-belah.<span class="zh">购物时携带可重复使用的购物袋。</span></li>
+      <li>Mengasingkan sampah untuk dikitar semula.<span class="zh">把垃圾分类以便回收。</span></li></ul>
+      <span class="zh">Tulis cara lain juga. 也请写出其他方法。</span></details>
+  </div>
+  
+  <div class="card">
+    <div class="bar"><button id="submit">Hantar 提交</button><button class="sec" id="reset">Mula semula 重做</button><span id="res"></span></div>
+    <div class="msg" id="msg"></div>
+  </div>
+  <div class="card" id="teacher" hidden>
+    <h2>Keputusan murid 学生成绩 (guru 老师)</h2>
+    <div class="scroll"><table><thead><tr><th>Nama 姓名</th><th>Kelas 班级</th><th>Markah 分数</th><th>Masa 时间</th><th>Unit 8</th></tr></thead><tbody id="rows"></tbody></table></div>
+  </div>
+</div>
+<script>
+const PARTS=[{t:["Bahagian A: Lengkapkan jadual","A部分：完成表格"],p:[]}];
+const FROWS=[['Adab berpakaian','穿着礼仪'],['Adab bercakap','交谈礼仪'],['Adab masuk dan keluar majlis','进出场礼仪'],['Adab duduk','就座礼仪']];
+// index = row*2 + column (0 = Majlis Rasmi, 1 = Majlis Tidak Rasmi)
+const FOPT=[
+ ['Mematuhi etika pakaian yang telah ditetapkan.','遵守规定的着装礼仪。'],
+ ['Mengikut kesesuaian majlis.','根据场合穿着合适。'],
+ ['Bercakap apabila perlu sahaja.','只在必要时才说话。'],
+ ['Bebas bercakap dengan sesiapa sahaja.','可以自由地与任何人交谈。'],
+ ['Masuk dan keluar mengikut masa dan pintu yang ditetapkan.','按规定的时间和出入口进出。'],
+ ['Boleh masuk dan keluar dengan lebih fleksibel, tetapi tetap sopan.','可以较灵活地进出，但仍须有礼貌。'],
+ ['Duduk di tempat yang telah disediakan oleh penganjur.','坐在主办者安排的座位上。'],
+ ['Boleh memilih tempat duduk yang sesuai.','可以选择合适的座位。']];
+const FORM_URL='https://docs.google.com/forms/d/e/1FAIpQLSd0jAMJd40rS8SmhBRvZX0hKRrphljyZwIUclpMJldygHNaGw/formResponse';
+const L="ABCDEFGHIJ";
+const shuf=n=>{const a=[...Array(n).keys()];for(let i=n-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+let order=PARTS.map(p=>shuf(p.p.length));
+let M=PARTS.map(p=>p.p.map(()=>null)); // M[part][left]=rightIndex (original index)
+let sel=PARTS.map(()=>null), locked=false, db=null, uid=null;
+const el=(h)=>{const d=document.createElement('div');d.innerHTML=h;return d.firstElementChild};
+const esc=s=>s.replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const txt=(a)=>esc(a[0])+'<span class="zh">'+esc(a[1])+'</span>';
+function tableCard(res){
+  const P=PARTS[0],o=order[0];
+  const card=el('<div class="card'+(locked?' locked':'')+'"><h2>'+esc(P.t[0])+'<span class="zh">'+esc(P.t[1])+'</span></h2><p>Tandakan (✔) satu jawapan yang betul bagi setiap baris.<span class="zh">每一行勾选一个正确答案。</span></p><div class="split"><div class="scroll"><table class="grid"></table></div><div class="opts"></div></div></div>');
+  const tb=card.querySelector('table');
+  let h='<tr><th>Adab 礼仪</th>'+o.map((_,k)=>'<th>'+L[k]+'</th>').join('')+'</tr>';
+  P.p.forEach((q,i)=>{
+    const m=M[0][i];
+    h+='<tr class="'+(res?(m===i?'ok':'bad'):'')+'"><td><b>'+(i+1)+'.</b> '+txt(q[0])+(res&&m!==i?'<span class="zh">✔ '+L[o.indexOf(i)]+'</span>':'')+'</td>'+o.map((ri,k)=>'<td><span class="box'+(m===ri?' on':'')+'" data-i="'+i+'" data-r="'+ri+'">'+(m===ri?'✔':'')+'</span></td>').join('')+'</tr>';
+  });
+  tb.innerHTML=h;
+  tb.querySelectorAll('.box').forEach(b=>b.onclick=()=>{if(locked)return;
+    const i=+b.dataset.i,ri=+b.dataset.r;
+    if(M[0][i]===ri){M[0][i]=null}else{const x=M[0].indexOf(ri);if(x>-1)M[0][x]=null;M[0][i]=ri}
+    render()});
+  const op=card.querySelector('.opts');
+  o.forEach((ri,k)=>op.appendChild(el('<div class="item" style="cursor:default"><span class="n">'+L[k]+'.</span> '+txt(P.p[ri][1])+'</div>')));
+  return card;
+}
+let FA=FOPT.map(()=>null),forder=shuf(FOPT.length);
+function fillCard(res){
+  const card=el('<div class="card'+(locked?' locked':'')+'"><h2>'+esc(PARTS[0].t[0])+'<span class="zh">'+esc(PARTS[0].t[1])+'</span></h2><p>Pilih huruf jawapan yang betul untuk setiap petak dalam jadual.<span class="zh">为表格中的每个空格选择正确答案的字母。</span></p><div class="bank" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0 10px;margin:8px 0"></div><div class="scroll"><table class="grid"></table></div></div>');
+  const bank=card.querySelector('.bank');
+  forder.forEach((oi,k)=>bank.appendChild(el('<div class="item" style="cursor:default"><span class="n">'+L[k]+'.</span> '+txt(FOPT[oi])+'</div>')));
+  const cell=c=>{
+    const v=FA[c],ok=v===c;
+    const sel='<select data-c="'+c+'" style="width:100%;padding:8px;font:inherit;border:2px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink)"'+(locked?' disabled':'')+'><option value="">\u2014</option>'+forder.map((oi,k)=>'<option value="'+oi+'"'+(v===oi?' selected':'')+'>'+L[k]+'</option>').join('')+'</select>';
+    const show=v!==null?'<div style="margin-top:6px;font-size:.9rem">'+txt(FOPT[v])+'</div>':'';
+    const fix=res&&!ok?'<div class="zh" style="color:var(--bad)">\u2714 '+L[forder.indexOf(c)]+'. '+esc(FOPT[c][0])+' / '+esc(FOPT[c][1])+'</div>':'';
+    return '<td style="text-align:left;vertical-align:top;'+(res?'box-shadow:inset 5px 0 var('+(ok?'--ok':'--bad')+')':'')+'">'+sel+show+fix+'</td>';
+  };
+  let h='<tr><th>MAJLIS RASMI<span class="zh">正式场合</span></th><th></th><th>MAJLIS TIDAK RASMI<span class="zh">非正式场合</span></th></tr>';
+  FROWS.forEach((r,i)=>{h+='<tr>'+cell(i*2)+'<td style="text-align:center;vertical-align:middle"><b>'+r[0]+'</b><span class="zh">'+r[1]+'</span></td>'+cell(i*2+1)+'</tr>'});
+  const tb=card.querySelector('table');tb.innerHTML=h;
+  tb.querySelectorAll('select').forEach(sl=>sl.onchange=()=>{if(locked)return;
+    const c=+sl.dataset.c;
+    if(sl.value===''){FA[c]=null}else{const oi=+sl.value;const x=FA.indexOf(oi);if(x>-1)FA[x]=null;FA[c]=oi}
+    render()});
+  return card;
+}
+function render(res){const root=document.getElementById('parts');root.innerHTML='';root.appendChild(fillCard(res))}
+function score(){let s=0;FA.forEach((v,c)=>{if(v===c)s++});return[s,FOPT.length]}
+function getU8(){const g=k=>[...document.querySelectorAll('[data-u8="'+k+'"]')].map(x=>x.value.trim());return{konsep:g('konsep'),kepentingan:g('kepentingan'),cara:g('cara')}}
+const msg=document.getElementById('msg'),resEl=document.getElementById('res');
+document.getElementById('reset').onclick=()=>{locked=false;document.querySelectorAll('#u8 input,#u8 textarea').forEach(x=>{x.value='';x.readOnly=false});FA=FOPT.map(()=>null);forder=shuf(FOPT.length);M=PARTS.map(p=>p.p.map(()=>null));sel=PARTS.map(()=>null);order=PARTS.map(p=>shuf(p.p.length));resEl.textContent='';msg.textContent='';render()};
+document.getElementById('submit').onclick=async()=>{
+  if(locked)return;
+  const name=document.getElementById('name').value.trim(),cls=document.getElementById('cls').value.trim();
+  if(!name||!cls){msg.textContent='Sila isi nama dan kelas. 请填写姓名和班级。';return}
+  const left=FA.filter(x=>x===null).length;
+  if(left&&!confirm('Masih ada '+left+' soalan belum dijawab. Hantar juga? 还有 '+left+' 题未答，仍要提交吗？'))return;
+  const [s,t]=score();locked=true;render(true);const u8=getU8();document.querySelectorAll('#u8 input,#u8 textarea').forEach(x=>x.readOnly=true);
+  resEl.textContent='Markah Unit 10 单元10分数: '+s+' / '+t;
+  if(FORM_URL){
+    try{
+      const num=a=>a.map((v,i)=>(i+1)+'. '+v).join('\n');
+      const fd=new URLSearchParams();
+      fd.append('entry.1171779057',name);fd.append('entry.847081245',cls);fd.append('entry.417090780',s+' / '+t);
+      fd.append('entry.417024696',num(u8.konsep));fd.append('entry.751441566',num(u8.kepentingan));fd.append('entry.136390501',num(u8.cara));
+      await fetch(FORM_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:fd.toString()});
+      msg.textContent='\u2705 Telah dihantar kepada guru. \u5df2\u63d0\u4ea4\u7ed9\u8001\u5e08\u3002';
+    }catch(e){msg.textContent='\u26a0\ufe0f Gagal menghantar. \u63d0\u4ea4\u5931\u8d25\uff0c\u8bf7\u518d\u8bd5\u3002'}
+    return;
+  }
+  if(!db||!uid){msg.textContent='Jawapan disemak tetapi tidak dapat dihantar kepada guru (sila log masuk). 已批改，但无法提交给老师（请先登录）。';return}
+  try{
+    await db.collection('submissions').doc(uid).set({name,cls,score:s,total:t,answers:FA,u8,ts:Date.now()});
+    msg.textContent='✅ Telah dihantar kepada guru. 已提交给老师。';
+  }catch(e){msg.textContent='⚠️ Gagal menghantar. 提交失败，请再试。 ('+(e&&e.code||'error')+')'}
+};
+render();
+(async()=>{
+  try{
+    const user=await claude.use('user');
+    db=await claude.use('db');
+    if(user){uid=await user.id();
+      if(user.isOwner()||user.canEdit()){
+        document.getElementById('teacher').hidden=false;
+        if(db)db.collection('submissions').onSnapshot(snap=>{
+          const rows=snap.docs.map(d=>d.data()).filter(Boolean).sort((a,b)=>(b.ts||0)-(a.ts||0));
+          document.getElementById('rows').innerHTML=rows.length?rows.map(r=>'<tr><td>'+esc(String(r.name||''))+'</td><td>'+esc(String(r.cls||''))+'</td><td>'+r.score+' / '+r.total+'</td><td>'+new Date(r.ts).toLocaleString()+'</td><td>'+(r.u8?'<details><summary>Lihat 查看</summary>'+esc(['Konsep: '+(r.u8.konsep||[]).join('; '),'Kepentingan: '+(r.u8.kepentingan||[]).join(' | '),'Cara: '+(r.u8.cara||[]).join(' | ')].join('\n')).replace(/\n/g,'<br>')+'</details>':'-')+'</td></tr>').join(''):'<tr><td colspan="5">Belum ada penghantaran. 暂无提交。</td></tr>';
+        },()=>{});
+      }}
+  }catch(e){}
+})();
+</script>
+</body>
+</html>
